@@ -1,0 +1,24 @@
+{
+  "artifactStructure": {
+      "assets": [
+          {
+              "root": "test-site/public"
+          }
+      ],
+      "hbsTemplates": []
+  },
+  "base_image_tag": "node-12.18",
+  "dependencies": {
+      "installDepsCmd": "echo install",
+      "requiredFiles": []
+  },
+  "buildArtifacts": {
+      "build_setup_cmd": "npm run setup-test-site",
+      "build_cmd": "npm run build-test-site"
+  },
+  "livePreview": {
+      "serve_setup_cmd": "echo serve setup",
+      "serve_cmd": "npm run serve-test-site"
+  },
+  "watch_cmd": "npm run watch"
+}
