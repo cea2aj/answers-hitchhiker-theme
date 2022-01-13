@@ -9,16 +9,16 @@
   },
   "base_image_tag": "node-12.18",
   "dependencies": {
-      "installDepsCmd": "ls /opt/buildhome/repo/ && npm ci",
+      "installDepsCmd": "echo install deps cmd",
       "requiredFiles": []
   },
   "buildArtifacts": {
-      "build_setup_cmd": "npm ci && npm run setup-test-site",
-      "build_cmd": "npm run build-test-site"
+      "build_setup_cmd": "cd test-site && ./scripts/setup.sh",
+      "build_cmd": "./scripts/build.sh"
   },
   "livePreview": {
       "serve_setup_cmd": "echo serve setup",
-      "serve_cmd": "npm run serve-test-site"
+      "serve_cmd": "npx serve -l 8080 public"
   },
   "watch_cmd": "npm run watch"
 }
