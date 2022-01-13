@@ -9,11 +9,11 @@
   },
   "base_image_tag": "node-12.18",
   "dependencies": {
-      "installDepsCmd": "npm ci",
+      "installDepsCmd": "ls /opt/buildhome/repo/ && npm ci",
       "requiredFiles": []
   },
   "buildArtifacts": {
-      "build_setup_cmd": "npm run setup-test-site",
+      "build_setup_cmd": "npm ci && npm run setup-test-site",
       "build_cmd": "npm run build-test-site"
   },
   "livePreview": {
