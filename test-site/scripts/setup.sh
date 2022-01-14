@@ -32,6 +32,9 @@ pwd
 echo "ls:"
 ls -la
 
+echo "npx jambo --help"
+npx jambo --help
+
 copy_static_files_into_working_dir
 npm i
 cleanup_custom_cards
