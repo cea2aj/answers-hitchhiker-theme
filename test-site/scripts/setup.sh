@@ -38,6 +38,9 @@ cat jambo.json
 echo "npx jambo --version"
 npx jambo --version
 
+echo "whoami"
+whoami
+
 copy_static_files_into_working_dir
 npm i
 cleanup_custom_cards
