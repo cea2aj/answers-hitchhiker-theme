@@ -7,7 +7,4 @@ set_working_dir_to_test_site () {
 
 set_working_dir_to_test_site
 
-echo 'which jambo'
-which jambo
-
-jambo build && grunt webpack
+npx jambo build && npx grunt webpack
