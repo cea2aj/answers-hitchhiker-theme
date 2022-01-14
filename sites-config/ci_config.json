@@ -9,7 +9,7 @@
   },
   "base_image_tag": "node-12.18",
   "dependencies": {
-      "installDepsCmd": "echo install deps cmd",
+      "installDepsCmd": "npm install",
       "requiredFiles": []
   },
   "buildArtifacts": {
