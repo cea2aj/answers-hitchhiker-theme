@@ -30,10 +30,13 @@ echo "Current working dir:"
 pwd
 
 echo "ls:"
-ls -la
+ls -la ../commands
 
-echo "npx jambo --help"
-npx jambo --help
+echo "cat jambo.json"
+cat jambo.json
+
+echo "npx jambo --version"
+npx jambo --version
 
 copy_static_files_into_working_dir
 npm i
