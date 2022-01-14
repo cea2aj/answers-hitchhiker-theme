@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "Working dir before setup:"
+pwd
+
 set -e
 
 set_working_dir_to_test_site () {
@@ -43,8 +46,8 @@ whoami
 
 copy_static_files_into_working_dir
 npm i
-cleanup_custom_cards
-create_custom_cards
+#cleanup_custom_cards
+#create_custom_cards
 
 # Clear out preexisting pages/config
 find pages ! -name index.* -type f -delete
