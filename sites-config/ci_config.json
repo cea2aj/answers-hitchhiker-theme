@@ -13,7 +13,7 @@
       "requiredFiles": []
   },
   "buildArtifacts": {
-      "build_setup_cmd": "cd test-site && ./scripts/setup.sh",
+      "build_setup_cmd": "npm run setup-test-site && npm run build-test-site",
       "build_cmd": "./scripts/build.sh"
   },
   "livePreview": {
